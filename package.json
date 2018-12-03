@@ -1,0 +1,40 @@
+{
+  "name": "vue-test-utils-example",
+  "version": "1.0.0",
+  "description": "Simple Vue Test Utils + Jest example project",
+  "main": "index.js",
+  "scripts": {
+    "dev": "poi",
+    "test": "jest"
+  },
+  "author": "Antonio Zemunik <zemunikantonio@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "jest-serializer-vue": "^2.0.2",
+    "poi": "^10.2.11",
+    "vue-jest": "^3.0.1"
+  },
+  "dependencies": {
+    "vue": "^2.5.17"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "moduleNameMapper": {
+      "^@/(.*)$": "<rootDir>/src/$1"
+    },
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/jest-serializer-vue"
+    ]
+  }
+}

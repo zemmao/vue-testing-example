@@ -1,0 +1,10 @@
+# Dependencies
+node_modules
+
+# Editors
+.vscode
+*.sublime-*
+.idea
+
+# General
+.DS_Store
