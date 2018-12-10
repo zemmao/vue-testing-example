@@ -1,5 +1,5 @@
 <template>
-  <h1> {{ msg || 'default message' }}</h1>
+  <h1 id="message"> {{ msg || 'default message' }}</h1>
 </template>
 
 <script>

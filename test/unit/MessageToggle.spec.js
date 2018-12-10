@@ -5,7 +5,7 @@ import Message from '@/components/Message';
 describe('MessageToggle.vue', () => {
   it('toggles msg passed To Message on button click', () => {
     const wrapper = shallowMount(MessageToggle);
-    const button = wrapper.find('#toggle-message');
+    const button = wrapper.find('#toggleMessage');
     button.trigger('click');
     const MessageComponent = wrapper.find(Message);
     expect(MessageComponent.props()).toEqual({ msg: 'message' });
